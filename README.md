@@ -28,6 +28,8 @@ Loomview is an open-source Android live wallpaper app that lets you set **any HT
   <video src="https://github.com/user-attachments/assets/34632190-f106-4ce5-8b74-3c8fc1052c6f" width="200" autoplay loop muted playsinline></video>
 </div>
 
+If you're interested in the live wallpaper effect shown in the screenshots, it was created using another project of mine. Feel free to check it out: https://bokehdepthstudio.com
+
 ## Features
 
 - 🌐 Renders HTML/CSS/JavaScript via the system WebView (Chromium)
