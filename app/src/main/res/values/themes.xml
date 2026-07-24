@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- BrowserActivity / SettingsActivity 用 DayNight 系列，讓系統狀態列等
+         系統 UI 元件也能感知深色模式；實際的 Compose 內容顏色由 LoomviewTheme
+         依使用者在設定頁選擇的 AppTheme 動態決定，兩者不衝突 —— XML 主題只負責
+         系統 UI 外觀，Compose 主題負責畫面內容配色。 -->
+    <style name="Theme.Loomview" parent="Theme.MaterialComponents.DayNight.NoActionBar" />
+
+    <!-- Viewer 固定使用純黑沉浸式主題，不隨使用者的外觀設定切換 —— Viewer 的
+         用途是預覽 HTML 內容／桌布效果，維持一致的黑色背景才能準確反映
+         實際套用為桌布後的樣子，不應該被淺色模式干擾。 -->
+    <style name="Theme.Loomview.Viewer" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="27">shortEdges</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+</resources>

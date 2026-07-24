@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 系統「桌布」清單中顯示 Loomview 這個 Live Wallpaper 的描述檔。 -->
+<wallpaper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/wallpaper_description"
+    android:thumbnail="@drawable/wallpaper_thumbnail" />

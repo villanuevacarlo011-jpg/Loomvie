@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="400dp"
+    android:height="800dp"
+    android:viewportWidth="400"
+    android:viewportHeight="800">
+    <!-- 美麗的漸層背景當作預設靜態縮圖 -->
+    <path android:pathData="M0,0 h400 v800 h-400 z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="0"
+                android:startY="0"
+                android:endX="400"
+                android:endY="800">
+                <item android:color="#2b5876" android:offset="0.0" />
+                <item android:color="#4e4376" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- 一些流線型的半透明幾何形狀，營造現代感 -->
+    <path
+        android:pathData="M -50,200 C 150,150 250,300 450,250 L 450,850 L -50,850 Z"
+        android:fillColor="#33FFFFFF" />
+    <path
+        android:pathData="M -100,500 C 100,400 300,600 500,450 L 500,900 L -100,900 Z"
+        android:fillColor="#4DFFFFFF" />
+    <!-- 簡單的 Loomview 標誌或裝飾（這裡用抽象的菱形代表） -->
+    <path
+        android:pathData="M 200,300 L 250,400 L 200,500 L 150,400 Z"
+        android:fillColor="#80FFFFFF" />
+</vector>

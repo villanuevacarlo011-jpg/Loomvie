@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Loomview</string>
+    <string name="open_with_loomview">Loomview</string>
+    <string name="wallpaper_description">將互動式 HTML 設為動態桌布。</string>
+    
+    <!-- Browser -->
+    <string name="tab_all">全部</string>
+    <string name="tab_recent">最近使用</string>
+    <string name="tab_favorites">收藏</string>
+    <string name="empty_hint_all">目前沒有任何檔案，請點擊右下角資料夾圖示匯入 HTML 檔案。</string>
+    <string name="empty_hint_recent">沒有最近瀏覽的檔案。</string>
+    <string name="empty_hint_favorites">還沒有任何收藏。</string>
+    <string name="btn_import">匯入</string>
+    <string name="content_desc_import">匯入</string>
+    
+    <!-- Browser Selection -->
+    <string name="selection_count">已選取 %d 項</string>
+    <string name="btn_cancel_selection">取消選取</string>
+    <string name="btn_delete_selected">從清單移除</string>
+    <string name="content_desc_switch_view">切換檢視模式</string>
+    <string name="content_desc_settings">設定</string>
+
+    <!-- Settings -->
+    <string name="settings_title">設定</string>
+    <string name="section_wallpaper_behavior">桌布行為</string>
+    <string name="render_quality">渲染畫質</string>
+    <string name="quality_native">原生</string>
+    <string name="quality_standard">標準</string>
+    <string name="quality_saver">省電</string>
+    <string name="fps_limit">幀率上限：%d fps</string>
+    <string name="pause_screen_off">螢幕關閉時暫停渲染</string>
+    <string name="downgrade_low_battery">低電量時自動降級畫質</string>
+    
+    <string name="section_file_storage">檔案與儲存</string>
+    <string name="thumbnail_cache">縮圖快取：%s</string>
+    <string name="btn_clear_cache">清除快取</string>
+    
+    <string name="section_appearance">外觀</string>
+    <string name="theme">主題</string>
+    <string name="theme_light">淺色</string>
+    <string name="theme_dark">深色</string>
+    <string name="theme_system">系統</string>
+    <string name="language">語言</string>
+    <string name="lang_system">系統</string>
+    <string name="lang_en">English</string>
+    <string name="lang_zh">正體中文</string>
+    
+    <string name="section_advanced">進階</string>
+    <string name="clear_all_data">清除全部資料</string>
+    <string name="clear_all_desc">移除所有已記錄的檔案、最近使用與收藏紀錄，並清空縮圖快取。不會刪除原始 HTML 檔案本身。</string>
+    <string name="dialog_clear_all_title">確定要清除全部資料？</string>
+    <string name="dialog_clear_all_desc">此操作無法復原。原始 HTML 檔案不會被刪除，僅移除 App 內的紀錄與快取。</string>
+    <string name="btn_confirm">確定清除</string>
+    <string name="btn_cancel">取消</string>
+    
+    <!-- Viewer -->
+    <string name="menu_set_wallpaper">設為桌布</string>
+    <string name="menu_file_info">檔案資訊</string>
+    <string name="menu_open_with">系統開啟方式</string>
+    <string name="menu_add_favorite">加入收藏</string>
+    <string name="menu_remove_favorite">取消收藏</string>
+    <string name="content_desc_back">返回</string>
+    <string name="content_desc_menu">選單</string>
+    
+    <!-- File Info Dialog -->
+    <string name="dialog_file_info_title">檔案資訊</string>
+    <string name="info_filename">檔名</string>
+    <string name="info_path">路徑</string>
+    <string name="info_size">大小</string>
+    <string name="info_last_modified">修改日期</string>
+    <string name="info_type">類型</string>
+    
+    <!-- Set Wallpaper Sheet -->
+    <string name="sheet_set_wallpaper_title">將此設為動態桌布</string>
+    <string name="sheet_set_wallpaper_desc">動態桌布可以接收點擊與滑動等觸控操作！但請注意，過於複雜的滑動手勢可能會與桌面啟動器（Launcher）的翻頁操作產生衝突。</string>
+    <string name="btn_set_wallpaper">設定桌布</string>
+    <string name="btn_close">關閉</string>
+    <string name="btn_confirm_apply">確認套用</string>
+</resources>

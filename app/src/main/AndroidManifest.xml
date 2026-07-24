@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 設桌布必要權限 -->
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+
+    <!-- 【暫時】除錯用途：目前為了排查黑屏問題，需要讓 HTML 能載入 Eruda（CDN 版）
+         這個線上除錯工具。問題排查完成後應移除這個權限，回到原本「完全離線運作」的設計。
+         正式版本不應該預設申請此權限——見下方原始說明。
+         全面採用 SAF (content://) 存取檔案，App 完全離線運作。
+         若之後某些 HTML 內容需要連網資源（例如引用外部 CDN），
+         使用者在該 HTML 載入失敗時應能自行判斷，App 本身不主動要求此權限。 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".LoomviewApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Loomview"
+        android:supportsRtl="true">
+
+        <!-- ============ 檔案瀏覽器（啟動頁） ============ -->
+        <activity
+            android:name=".ui.browser.BrowserActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Loomview">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ============ 檢視器：通用 HTML 容器 ============ -->
+        <!-- P0 核心：讓 Loomview 出現在系統「開啟方式」選單中，
+             對任何 .html 檔案一視同仁，不做內容假設。 -->
+        <activity
+            android:name=".ui.viewer.ViewerActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|screenSize|keyboardHidden|uiMode"
+            android:theme="@style/Theme.Loomview.Viewer">
+
+            <!-- 情境一：來源明確標示 text/html mime type（多數檔案總管會如此標記） -->
+            <intent-filter android:label="@string/open_with_loomview">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="content" />
+                <data android:mimeType="text/html" />
+            </intent-filter>
+            <intent-filter android:label="@string/open_with_loomview">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="file" />
+                <data android:mimeType="text/html" />
+            </intent-filter>
+
+            <!-- 情境二：來源未標示 mime type 或給 octet-stream，退而用副檔名比對兜底 -->
+            <intent-filter android:label="@string/open_with_loomview">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="content" />
+                <data android:mimeType="*/*" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\\.html" />
+                <data android:pathPattern=".*\\..*\\.html" />
+                <data android:pathPattern=".*\\..*\\..*\\.html" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.html" />
+                <data android:pathPattern=".*\\.htm" />
+            </intent-filter>
+
+            <!-- 情境三：從「分享」選單傳入 -->
+            <intent-filter android:label="@string/open_with_loomview">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/html" />
+            </intent-filter>
+        </activity>
+
+        <!-- ============ 設定 ============ -->
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Loomview" />
+
+        <!-- ============ Live Wallpaper 引擎 ============ -->
+        <service
+            android:name=".wallpaper.LoomviewLiveWallpaper"
+            android:exported="true"
+            android:permission="android.permission.BIND_WALLPAPER"
+            android:label="@string/app_name"
+            android:icon="@drawable/wallpaper_thumbnail">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/wallpaper_info" />
+        </service>
+
+    </application>
+</manifest>

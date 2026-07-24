@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Loomview</string>
+    <string name="open_with_loomview">Loomview</string>
+    <string name="wallpaper_description">Display interactive HTML as your live wallpaper.</string>
+    
+    <!-- Browser -->
+    <string name="tab_all">All</string>
+    <string name="tab_recent">Recent</string>
+    <string name="tab_favorites">Favorites</string>
+    <string name="empty_hint_all">No HTML files found. Tap the folder icon to import.</string>
+    <string name="empty_hint_recent">No recently viewed files.</string>
+    <string name="empty_hint_favorites">No favorites added.</string>
+    <string name="btn_import">Import</string>
+    <string name="content_desc_import">Import</string>
+    
+    <!-- Browser Selection -->
+    <string name="selection_count">%d Selected</string>
+    <string name="btn_cancel_selection">Cancel Selection</string>
+    <string name="btn_delete_selected">Remove Selected</string>
+    <string name="content_desc_switch_view">Switch View Mode</string>
+    <string name="content_desc_settings">Settings</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="section_wallpaper_behavior">Wallpaper Behavior</string>
+    <string name="render_quality">Render Quality</string>
+    <string name="quality_native">Native</string>
+    <string name="quality_standard">Standard</string>
+    <string name="quality_saver">Saver</string>
+    <string name="fps_limit">FPS Limit: %d fps</string>
+    <string name="pause_screen_off">Pause when screen off</string>
+    <string name="downgrade_low_battery">Downgrade on low battery</string>
+    
+    <string name="section_file_storage">File &amp; Storage</string>
+    <string name="thumbnail_cache">Thumbnail Cache: %s</string>
+    <string name="btn_clear_cache">Clear Cache</string>
+    
+    <string name="section_appearance">Appearance</string>
+    <string name="theme">Theme</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system">System</string>
+    <string name="language">Language</string>
+    <string name="lang_system">System</string>
+    <string name="lang_en">English</string>
+    <string name="lang_zh">正體中文</string>
+    <string name="lang_ja">日本語</string>
+    
+    <string name="section_advanced">Advanced</string>
+    <string name="clear_all_data">Clear All Data</string>
+    <string name="clear_all_desc">Remove all records, recents, favorites, and clear cache. Original HTML files will not be deleted.</string>
+    <string name="dialog_clear_all_title">Clear all data?</string>
+    <string name="dialog_clear_all_desc">This action cannot be undone. Original HTML files will not be deleted.</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="btn_cancel">Cancel</string>
+    
+    <!-- Viewer -->
+    <string name="menu_set_wallpaper">Set as Wallpaper</string>
+    <string name="menu_file_info">File Info</string>
+    <string name="menu_open_with">Open with...</string>
+    <string name="menu_add_favorite">Add to Favorites</string>
+    <string name="menu_remove_favorite">Remove from Favorites</string>
+    <string name="content_desc_back">Back</string>
+    <string name="content_desc_menu">Menu</string>
+    
+    <!-- File Info Dialog -->
+    <string name="dialog_file_info_title">File Info</string>
+    <string name="info_filename">Filename</string>
+    <string name="info_path">Path</string>
+    <string name="info_size">Size</string>
+    <string name="info_last_modified">Last Modified</string>
+    <string name="info_type">Type</string>
+    
+    <!-- Set Wallpaper Sheet -->
+    <string name="sheet_set_wallpaper_title">Set as Live Wallpaper</string>
+    <string name="sheet_set_wallpaper_desc">Interactive HTML wallpapers can receive touch events on your home screen. Note that complex interactions or scrolling might conflict with your launcher\'s swipe gestures.</string>
+    <string name="btn_set_wallpaper">Set Wallpaper</string>
+    <string name="btn_close">Close</string>
+    <string name="btn_confirm_apply">Apply</string>
+</resources>
