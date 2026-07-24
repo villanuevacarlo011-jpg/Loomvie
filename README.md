@@ -23,9 +23,9 @@ Loomview is an open-source Android live wallpaper app that lets you set **any HT
 ## Screenshots
 
 <div align="center">
-  <video src="screenshots/ex01.webm" width="200px" autoplay loop muted playsinline></video>
+  <video src="screenshots/ex01.webm" width="45%" autoplay loop muted playsinline></video>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <video src="screenshots/ex02.webm" width="200px" autoplay loop muted playsinline></video>
+  <video src="screenshots/ex02.webm" width="45%" autoplay loop muted playsinline></video>
 </div>
 
 ## Features
