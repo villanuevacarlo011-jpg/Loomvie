@@ -1,3 +1,5 @@
+[ex01.webm](https://github.com/user-attachments/assets/849990b4-1b3b-4487-8ab3-8f2993fc7818)
+[ex02.webm](https://github.com/user-attachments/assets/34632190-f106-4ce5-8b74-3c8fc1052c6f)
 <div align="center">
 
 # Loomview
@@ -23,9 +25,9 @@ Loomview is an open-source Android live wallpaper app that lets you set **any HT
 ## Screenshots
 
 <div align="center">
-  <video src="screenshots/ex01.webm" width="45%" autoplay loop muted playsinline></video>
+  <video src="[screenshots/ex01.webm](https://github.com/user-attachments/assets/849990b4-1b3b-4487-8ab3-8f2993fc7818)" width="45%" autoplay loop muted playsinline></video>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <video src="screenshots/ex02.webm" width="45%" autoplay loop muted playsinline></video>
+  <video src="[ex02.webm](https://github.com/user-attachments/assets/34632190-f106-4ce5-8b74-3c8fc1052c6f)" width="45%" autoplay loop muted playsinline></video>
 </div>
 
 ## Features
