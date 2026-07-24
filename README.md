@@ -2,7 +2,7 @@
 
 # Loomview
 
-**A live wallpaper engine for Android that renders interactive HTML/CSS/JS directly on your home screen.**
+**A live wallpaper engine for Android that renders interactive HTML directly on your home screen.**
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![Android](https://img.shields.io/badge/Android-8.0%2B-brightgreen.svg)](https://developer.android.com/about/versions/oreo)
